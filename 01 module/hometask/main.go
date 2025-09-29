@@ -98,19 +98,19 @@ func (l *Library) ReturnBook(readerID, isbn string) {
 	fmt.Println("Читатель не брал эту книгу.")
 }
 
-// func main() {
-// 	library := Library{}
+func main() {
+	library := Library{}
 
-// 	library.AddBook(Book{Title: "1984", Author: "George Orwell", ISBN: "123", Copies: 3})
-// 	library.AddBook(Book{Title: "Clean Code", Author: "Robert C. Martin", ISBN: "456", Copies: 2})
+	library.AddBook(Book{Title: "1984", Author: "George Orwell", ISBN: "123", Copies: 3})
+	library.AddBook(Book{Title: "Clean Code", Author: "Robert C. Martin", ISBN: "456", Copies: 2})
 
-// 	reader := Reader{Name: "Alihan", ID: "R001"}
-// 	library.RegisterReader(reader)
+	reader := Reader{Name: "Alihan", ID: "R001"}
+	library.RegisterReader(reader)
 
-// 	library.IssueBook("R001", "123")
-// 	library.IssueBook("R001", "456")
+	library.IssueBook("R001", "123")
+	library.IssueBook("R001", "456")
 
-// 	library.ReturnBook("R001", "123")
+	library.ReturnBook("R001", "123")
 
-// 	library.RemoveBook("456")
-// }
+	library.RemoveBook("456")
+}

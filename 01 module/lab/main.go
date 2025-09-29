@@ -69,29 +69,29 @@ func (f *Fleet) FindVehicle(vehicleID string) (*Vehicle, *Garage) {
 	return nil, nil
 }
 
-// func main() {
-// 	v1 := Vehicle{ID: "01", brand: "Toyota", model: "Camry", year: 2018}
-// 	v2 := Vehicle{ID: "02", brand: "Hyndai", model: "Accent", year: 2019}
-// 	v3 := Vehicle{ID: "03", brand: "Geely", model: "Emgrand", year: 2025}
-// 	v4 := Vehicle{ID: "04", brand: "Hyndai", model: "Accent", year: 2014}
+func main() {
+	v1 := Vehicle{ID: "01", brand: "Toyota", model: "Camry", year: 2018}
+	v2 := Vehicle{ID: "02", brand: "Hyndai", model: "Accent", year: 2019}
+	v3 := Vehicle{ID: "03", brand: "Geely", model: "Emgrand", year: 2025}
+	v4 := Vehicle{ID: "04", brand: "Hyndai", model: "Accent", year: 2014}
 
-// 	garage01 := Garage{ID: "01"}
-// 	garage02 := Garage{ID: "02"}
+	garage01 := Garage{ID: "01"}
+	garage02 := Garage{ID: "02"}
 
-// 	garage01.AddVehicle(v1)
-// 	garage01.AddVehicle(v2)
-// 	garage02.AddVehicle(v3)
-// 	garage02.AddVehicle(v4)
+	garage01.AddVehicle(v1)
+	garage01.AddVehicle(v2)
+	garage02.AddVehicle(v3)
+	garage02.AddVehicle(v4)
 
-// 	fleet := Fleet{}
-// 	fleet.AddGarage(garage01)
-// 	fleet.AddGarage(garage02)
+	fleet := Fleet{}
+	fleet.AddGarage(garage01)
+	fleet.AddGarage(garage02)
 
-// 	Vehicle, garage := fleet.FindVehicle("02")
-// 	if Vehicle != nil {
-// 		fmt.Printf("Найдено транспортное средство: %s %s в гараже под номером %s\n", Vehicle.brand, Vehicle.model, garage.ID)
-// 	} else {
-// 		fmt.Printf("Транспортное средство не найдено")
-// 	}
-// 	fleet.RemoveGarage("02")
-// }
+	Vehicle, garage := fleet.FindVehicle("02")
+	if Vehicle != nil {
+		fmt.Printf("Найдено транспортное средство: %s %s в гараже под номером %s\n", Vehicle.brand, Vehicle.model, garage.ID)
+	} else {
+		fmt.Printf("Транспортное средство не найдено")
+	}
+	fleet.RemoveGarage("02")
+}
