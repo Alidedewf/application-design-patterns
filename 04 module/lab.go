@@ -51,7 +51,6 @@ type CarFactory struct{}
 type MotorcycleFactory struct{}
 type PlaneFactory struct{}
 
-
 func (f CarFactory) CreateTransport() ITransport {
 	return Car{Model: "Hyndai"}
 }
@@ -63,4 +62,3 @@ func (f MotorcycleFactory) CreateTransport() ITransport {
 func (f PlaneFactory) CreateTransport() ITransport {
 	return Plane{Airline: "AirAstana"}
 }
-
