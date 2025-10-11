@@ -6,7 +6,7 @@ type Book struct {
 	Title  string
 	Author string
 	ISBN   string
-	Copies int
+	Copies int 
 }
 
 type Reader struct {
@@ -15,7 +15,7 @@ type Reader struct {
 }
 
 type Library struct {
-	Books   []Book
+	Books   []Book 
 	Readers []Reader
 	Loans   map[string][]string
 }
