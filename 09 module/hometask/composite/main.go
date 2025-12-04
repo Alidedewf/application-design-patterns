@@ -48,7 +48,7 @@ func (d *Directory) Add(c FileSystemComponent) {
 			fmt.Printf("Directory '%s': компонент '%s' уже существует!\n", d.name, c.Name())
 			return
 		}
- 	}
+	}
 	d.components = append(d.components, c)
 }
 
